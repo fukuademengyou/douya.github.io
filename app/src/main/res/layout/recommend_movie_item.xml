@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/recommend_movie_item_image"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_top250" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recommend_movie_item_name"
+        android:text="肖申克的救赎"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/recommend_movie_item_image"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recommend_movie_item_name"
+        android:orientation="horizontal">
+        <RatingBar
+            android:id="@+id/recommend_movie_item_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_hot_movie_cname1"
+            android:isIndicator="false"
+            android:layout_marginTop="2dp"
+            android:numStars="5"
+            android:progressTint="#FCC222"
+            android:rating="4.5" />
+
+        <TextView
+            android:id="@+id/recommend_movie_item_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="9.0"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

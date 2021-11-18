@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/fragment_upcoming_movie_image1"
+        android:layout_width="120dp"
+        android:clickable="true"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_top250" />
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_cname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_upcoming_movie_image1"
+        android:layout_marginTop="5dp"
+        android:text="流浪地球"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/fragment_upcoming_movie_rating1"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_upcoming_movie_cname1"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#FCC222"
+        android:rating="3.5" />
+
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_grade1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="213dp"
+        android:layout_toRightOf="@id/fragment_upcoming_movie_rating1"
+        android:text="7.0"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/fragment_upcoming_movie_image2"
+        android:layout_width="120dp"
+        android:clickable="true"
+        android:layout_height="180dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_top250" />
+
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_cname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_upcoming_movie_image1"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="5dp"
+        android:text="流浪地球"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/fragment_upcoming_movie_rating2"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_upcoming_movie_cname2"
+        android:isIndicator="false"
+        android:layout_marginLeft="140dp"
+        android:numStars="5"
+        android:progressTint="#FCC222"
+        android:rating="3.5" />
+
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_grade2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_upcoming_movie_rating2"
+        android:layout_marginTop="213dp"
+        android:text="7.0"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/fragment_upcoming_movie_image3"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="280dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_top250" />
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_cname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_upcoming_movie_image1"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="5dp"
+        android:text="流浪地球"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/fragment_upcoming_movie_rating3"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_upcoming_movie_cname3"
+        android:isIndicator="false"
+        android:layout_marginLeft="280dp"
+        android:numStars="5"
+        android:progressTint="#FCC222"
+        android:rating="3.5" />
+
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_grade3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_upcoming_movie_rating3"
+        android:layout_marginTop="213dp"
+        android:text="7.0"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/fragment_upcoming_movie_image4"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="240dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_top250" />
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_cname4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_upcoming_movie_image4"
+        android:layout_marginTop="5dp"
+        android:text="流浪地球"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/fragment_upcoming_movie_rating4"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_upcoming_movie_cname4"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#FCC222"
+        android:rating="3.5" />
+
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_grade4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_upcoming_movie_rating4"
+        android:layout_marginTop="443dp"
+        android:text="7.0"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/fragment_upcoming_movie_image5"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="240dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_top250" />
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_cname5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_upcoming_movie_image5"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="5dp"
+        android:text="流浪地球"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/fragment_upcoming_movie_rating5"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_upcoming_movie_cname5"
+        android:isIndicator="false"
+        android:layout_marginLeft="140dp"
+        android:numStars="5"
+        android:progressTint="#FCC222"
+        android:rating="3.5" />
+
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_grade5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="443dp"
+        android:layout_toRightOf="@id/fragment_upcoming_movie_rating5"
+        android:text="7.0"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/fragment_upcoming_movie_image6"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="240dp"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:src="@drawable/bg_top250" />
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_cname6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_upcoming_movie_image6"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="5dp"
+        android:text="流浪地球"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RatingBar
+        android:id="@+id/fragment_upcoming_movie_rating6"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_upcoming_movie_cname6"
+        android:isIndicator="false"
+        android:layout_marginLeft="280dp"
+        android:numStars="5"
+        android:progressTint="#FCC222"
+        android:rating="3.5" />
+
+
+    <TextView
+        android:id="@+id/fragment_upcoming_movie_grade6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fragment_upcoming_movie_rating6"
+        android:layout_marginTop="443dp"
+        android:text="7.0"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+
+
+</RelativeLayout>

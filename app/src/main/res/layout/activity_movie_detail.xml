@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#566E7A"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/titlebar_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/activity_movie_detail_back1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#566E7A"
+                android:src="@drawable/white_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="155dp"
+                android:text="电影"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/titlebar_ll"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/activity_movie_detail_back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#566E7A"
+                android:src="@drawable/white_arrow_back" />
+
+            <ImageView
+                android:id="@+id/activity_movie_detail_title_image"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_top250" />
+
+            <TextView
+                android:id="@+id/activity_movie_detail_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:text="了不起的盖茨比"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/activity_movie_detail_title_rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_movie_detail_title_name"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="2dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="#FCC222"
+                android:rating="4.5" />
+
+            <TextView
+                android:id="@+id/activity_movie_detail_title_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_movie_detail_title_name"
+                android:layout_marginLeft="160dp"
+                android:text="9.5"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_first_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titlebar_ll"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/movie_detail_movie_image"
+                android:layout_width="125dp"
+                android:layout_height="175dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_top250" />
+
+            <TextView
+                android:id="@+id/movie_detail_movie_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp"
+                android:text="了不起的盖茨比"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movie_detail_brief_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_detail_movie_name"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="20dp"
+                android:maxLines="2"
+                android:text="美国/监狱/上映时间:/片长:120分钟"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_movie_detail_favor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/movie_detail_brief_introduction"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/roundimage"
+                android:drawableLeft="@drawable/star_white"
+                android:gravity="left"
+                android:paddingLeft="70dp"
+                android:paddingTop="5dp"
+                android:text="收藏"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_second_part"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/rl_first_part"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_movie_detail"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="豆瓣评分TM"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/grade_item_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="7.5"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/grade_item_rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grade_item_grade"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="#FCC222"
+                android:rating="3.5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/grade_item_grade">
+
+                <ImageView
+                    android:id="@+id/grade_item_five_star"
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/five_star_gray" />
+
+                <ProgressBar
+                    android:id="@+id/grade_item_five_star_progressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/grade_item_five_star"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <ImageView
+                    android:id="@+id/grade_item_four_star"
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+
+                    android:layout_below="@+id/grade_item_five_star"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/four_star_gray" />
+
+                <ProgressBar
+                    android:id="@+id/grade_item_four_star_progressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@+id/grade_item_five_star_progressbar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/grade_item_four_star"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <ImageView
+                    android:id="@+id/grade_item_three_star"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/grade_item_four_star"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/three_star_gray" />
+
+                <ProgressBar
+                    android:id="@+id/grade_item_three_star_progressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@+id/grade_item_four_star_progressbar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/grade_item_three_star"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <ImageView
+                    android:id="@+id/grade_item_two_star"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/grade_item_three_star"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/two_star_gray" />
+
+                <ProgressBar
+                    android:id="@+id/grade_item_two_star_progressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@+id/grade_item_three_star_progressbar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/grade_item_two_star"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+                <ImageView
+                    android:id="@+id/grade_item_one_star"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/grade_item_two_star"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/one_star_gray" />
+
+                <ProgressBar
+                    android:id="@+id/grade_item_one_star_progressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="6dp"
+                    android:layout_below="@+id/grade_item_two_star_progressbar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/grade_item_one_star"
+                    android:max="100"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/bg_progressbar" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_second_part"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ticket"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:text="   选座购票"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_third_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ticket"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_movie_detail"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/introduction_item_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="近年来,科学家们发现太阳急速衰老膨胀"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/rl_fourth_part"
+            android:layout_below="@id/rl_third_part"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/actor_list_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="演职员"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_actor_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actor_list_item_title"
+                android:layout_marginTop="20dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fifth_part"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@id/rl_fourth_part"
+            android:background="#566E7A"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/preview_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预告片 / 视频评论 / 剧照"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/preview_item_title"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sixth_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_fifth_part"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_movie_detail"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短评"
+                android:id="@+id/tv_comment_title"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_comment_title"
+                android:layout_marginTop="20dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

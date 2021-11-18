@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#2C3B42"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/comment_item_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/douban_top" />
+
+    <TextView
+        android:id="@+id/comment_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="沙雕电影"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/comment_item_rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_item_name"
+        android:layout_marginLeft="50dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#FCC222"
+        android:rating="3.5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_item_remark"
+        android:layout_below="@+id/comment_item_image"
+        android:layout_marginTop="20dp"
+        android:text="    电影本身其实可以打四星吧。。节奏和剧情稍微弱了一些，但是后面20分钟的高潮很精彩。特效实在是厉害，好像还是全中国特效团队做的，加一星。"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_item_remark"
+        android:id="@+id/comment_item_people"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/upvote2"
+        android:gravity="right"
+        android:text="38593人"
+        android:textColor="#A0A9AE" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/comment_item_people"
+        android:layout_marginTop="20dp"
+        android:background="#4C595F" />
+
+
+
+
+</RelativeLayout>

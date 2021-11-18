@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/frameLayout"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_main"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_subject"
+            android:drawableTop="@drawable/subject_button_selector"
+            android:text="书影音"
+            android:textColor="@color/bottom_button_text_selector"
+            style="@style/MainButtonStyle"/>
+        <RadioButton
+            android:id="@+id/rb_profile"
+            android:drawableTop="@drawable/profile_button_selector"
+            android:text="我的"
+            android:textColor="@color/bottom_button_text_selector"
+            style="@style/MainButtonStyle"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/actor_item_image"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_top250" />
+
+    <TextView
+        android:id="@+id/actor_item_cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actor_item_image"
+        android:layout_marginTop="5dp"
+        android:text="屈楚萧"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/actor_item_ename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actor_item_image"
+        android:layout_marginTop="25dp"
+        android:text="Chuxiao Qu"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>
